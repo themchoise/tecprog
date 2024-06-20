@@ -1,0 +1,22 @@
+art_nombre = input("Ingrese el nombre del articulo  \n")
+art_precio = int(input("Ingrese el precio unitario  \n"))
+print("""Deptartamento - Porcentaje de Incremento
+         >1     - 10%
+         >2     - 15%
+         >3     - 20%
+         >Otro  - 5%""")
+art_depto= int(input("Ingrese departamento  \n"))
+art_incremento = 0
+incremento =0
+match art_depto:
+    case 1:
+        art_incremento = art_precio+ art_precio*0.1
+        incremento = 0.1
+    case 2:
+        art_incremento  = art_precio+ art_precio*0.15
+        incremento = 0.15
+    case 3:
+        art_incremento  = art_precio+ art_precio*0.2
+        incremento = 0.2
+
+print(f'El articulo {art_nombre} con precio {art_precio} ahora vale {art_incremento} por incremento ${incremento*100}%  pertenece al departamento {art_depto}')

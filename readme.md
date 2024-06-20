@@ -148,13 +148,20 @@ DF – PS - PY
 >deberá mostrar el mensaje: “Se alcanzó el objetivo” de lo contrario deberá mostrar el mensaje “Buscar
 >nuevas estrategias de ventas”. DF – PS - PY
 
-27. Se requiere un algoritmo que solicite ingresar:
-a. Nombre del Artículo.
-b. Precio o costo unitario.
-c. Número de departamento en donde se localiza el producto.
-En base a los datos ingresados se deberá calcular el incremento de los costos del producto y mostrar el
-costo final. DF – PS
-
+27. ALGORITMo
+>Se requiere un algoritmo que solicite ingresar:
+>a. Nombre del Artículo.
+>b. Precio o costo unitario.
+>c. Número de departamento en donde se localiza el producto.
+>En base a los datos ingresados se deberá calcular el incremento de los costos del producto y mostrar el
+>costo final. DF – PS
+>
+>Deptartamento - Porcentaje de Incremento
+        >1     - 10%
+        >2     - 15%
+        >3     - 20%
+        >Otro  - 5%
+>
 
 ### Estructuras Repetitivas
 ---
