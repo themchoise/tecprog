@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>py2flowchart</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.18.0/flowchart.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <pre id="code" style="display:none"></pre>
+        <script>
+            code= `
+start=>start: start
+input25=>input: x1 = int(input("Ingrese el valor de x1 \n"))
+input26=>input: x2 = int(input("Ingrese el valor de x2 \n"))
+input27=>input: y1 = int(input("Ingrese el valor de y1 \n"))
+input28=>input: y2 = int(input("Ingrese el valor de y2 \n"))
+output29=>output: print(f'Distancia { (((x2-x1)**2) + ((y2 - y1)**2) )**1/2 }')
+end=>end: end
+start->input25
+input25->input26
+input26->input27
+input27->input28
+input28->output29
+output29->end
+
+`;
+            chart = flowchart.parse(code);
+            chart.drawSVG('canvas', {"line-width": 2});
+			console.log(code);
+			var code_pre = code.replaceAll("&", "&amp;").replaceAll("<", "&lt;");
+            document.getElementById("code").innerHTML = code_pre;
+        </script>
+		<script>
+		// double click to copy svg to clipboard
+		document.ondblclick = async () => {
+			var svg = document.getElementsByTagName('svg')[0];
+			await navigator.clipboard.writeText(svg.outerHTML);
+		}
+		</script>
+		<!-- see https://github.com/dstang2000/py2flowchart -->
+    </body>
+</html>

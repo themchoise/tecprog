@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>py2flowchart</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.18.0/flowchart.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <pre id="code" style="display:none"></pre>
+        <script>
+            code= `
+start=>start: start
+input43=>input: num = int(input("Ingrese monto de la compra \n"))
+operation44=>operation: monto_pagar = 0
+operation45=>operation: estarjeta = True
+operation46=>operation: dto_15 = 0.85
+operation47=>operation: dto_10 = 0.90
+condition48=>condition: if num > 2000 and num <= 5000
+operation49=>operation: monto_pagar = num * dto_10
+condition50=>condition: if num > 5000 and not estarjeta
+operation51=>operation: monto_pagar = num * dto_15
+condition52=>condition: if num > 5000 and estarjeta
+operation53=>operation: monto_pagar = num * dto_10
+operation54=>operation: pass
+output55=>output: print(monto_pagar)
+end=>end: end
+start->input43
+input43->operation44
+operation44->operation45
+operation45->operation46
+operation46->operation47
+operation47->condition48
+condition48(yes)->operation49
+condition48(no)->condition50
+condition50(yes)->operation51
+condition50(no)->condition52
+condition52(yes)->operation53
+condition52(no)->operation54
+operation49->output55
+operation51->output55
+operation53->output55
+operation54->output55
+output55->end
+
+`;
+            chart = flowchart.parse(code);
+            chart.drawSVG('canvas', {"line-width": 2});
+			console.log(code);
+			var code_pre = code.replaceAll("&", "&amp;").replaceAll("<", "&lt;");
+            document.getElementById("code").innerHTML = code_pre;
+        </script>
+		<script>
+		// double click to copy svg to clipboard
+		document.ondblclick = async () => {
+			var svg = document.getElementsByTagName('svg')[0];
+			await navigator.clipboard.writeText(svg.outerHTML);
+		}
+		</script>
+		<!-- see https://github.com/dstang2000/py2flowchart -->
+    </body>
+</html>

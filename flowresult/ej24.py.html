@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>py2flowchart</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.18.0/flowchart.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <pre id="code" style="display:none"></pre>
+        <script>
+            code= `
+start=>start: start
+operation66=>operation: from py2flowchart import pyfile2flowchart
+operation67=>operation: prim_30 = 6.03
+operation68=>operation: sec_90 = 6.19
+operation69=>operation: sig_80 = 6.78
+operation70=>operation: resto = 7.24
+input71=>input: consumo_kw = int(input("Ingrese el consumo (KW) en el mes \n"))
+operation72=>operation: consumo_acum = 0
+condition73=>condition: while consumo_kw > 0|past
+condition74=>condition: if consumo_kw < 30
+operation75=>operation: consumo_acum = consumo_kw * prim_30
+operation76=>operation: consumo_kw = 0
+operation77=>operation: break
+operation78=>operation: pass
+condition79=>condition: if consumo_kw < 120
+operation80=>operation: consumo_parcial =  consumo_kw - 30
+operation81=>operation: consumo_acum = ( 30 * prim_30 ) + ( consumo_parcial *  6.19 )
+operation82=>operation: consumo_kw = 0
+operation83=>operation: break
+operation84=>operation: pass
+condition85=>condition: if consumo_kw < 200
+operation86=>operation: consumo_parcial =  consumo_kw - 120
+operation87=>operation: consumo_acum = ( 30 * prim_30 ) + ( 90 * sec_90 ) + ( consumo_parcial *  6.78 )
+operation88=>operation: consumo_kw = 0
+operation89=>operation: break
+operation90=>operation: consumo_parcial =  consumo_kw - 200
+operation91=>operation: consumo_acum = ( 30 * prim_30 ) + ( 90 * sec_90 ) + ( 80 * sig_80 ) + ( consumo_parcial *  resto )
+operation92=>operation: consumo_kw = 0
+subroutine93=>subroutine: print (consumo_acum)
+end=>end: end
+start->operation66
+operation66->operation67
+operation67->operation68
+operation68->operation69
+operation69->operation70
+operation70->input71
+input71->operation72
+operation72->condition73
+condition73(yes)->condition74
+condition74(yes)->operation75
+operation75->operation76
+operation76->operation77
+condition74(no)->operation78
+operation77->condition79
+operation78->condition79
+condition79(yes)->operation80
+operation80->operation81
+operation81->operation82
+operation82->operation83
+condition79(no)->operation84
+operation83->condition85
+operation84->condition85
+condition85(yes)->operation86
+operation86->operation87
+operation87->operation88
+operation88->operation89
+condition85(no)->operation90
+operation90->operation91
+operation91->operation92
+operation89->condition73
+operation92->condition73
+condition73(no)->subroutine93
+subroutine93->end
+
+`;
+            chart = flowchart.parse(code);
+            chart.drawSVG('canvas', {"line-width": 2});
+			console.log(code);
+			var code_pre = code.replaceAll("&", "&amp;").replaceAll("<", "&lt;");
+            document.getElementById("code").innerHTML = code_pre;
+        </script>
+		<script>
+		// double click to copy svg to clipboard
+		document.ondblclick = async () => {
+			var svg = document.getElementsByTagName('svg')[0];
+			await navigator.clipboard.writeText(svg.outerHTML);
+		}
+		</script>
+		<!-- see https://github.com/dstang2000/py2flowchart -->
+    </body>
+</html>
