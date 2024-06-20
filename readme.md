@@ -64,46 +64,56 @@ NOTAS:
 
 11. MENOR O MAYOR
 
->ESCRIBIR UN ALGORITMO QUE DETERMINE SI UN NUMERO ES MENOR O
->MAYOR A OTRO
-
-12. ALGORITMO
 >Escribir un algoritmo que permita al usuario calcular una potencia y luego muestre el resultado de este
 >cálculo. Para ello el usuario debe ingresar un número y luego su exponente. Es decir. Ejemplo: 52 = 25 (5
 >elevado al cuadrado, es igual a 25) DF – PS
 
-14. Escribir un algoritmo que permita al usuario ingresar dos números (el 1er número es el radicando, y el 2do
-número es el índice) para calcular la raíz y luego le muestre al usuario el resultado de este cálculo. Ejemplo:
-√25 = 5 (raíz cuadrada de 25, es igual a 5, se deberá permitir al usuario ingresar el 25 y el 2 que actuará de
-indice) DF – PS
-14.Realizar la prueba de escritorio correspondiente al ejercicio 1.
-15.Realizar la prueba de escritorio correspondiente al ejercicio 2.
+12. ALGORITMO
+>Escribir un algoritmo que permita al usuario ingresar dos números (el 1er número es el radicando, y el 2do
+>número es el índice) para calcular la raíz y luego le muestre al usuario el resultado de este cálculo. Ejemplo:
+>√25 = 5 (raíz cuadrada de 25, es igual a 5, se deberá permitir al usuario ingresar el 25 y el 2 que actuará de
+>indice) DF – PS
+
+13. PRUEBA
+>Realizar la prueba de escritorio correspondiente al ejercicio 11.
+14. PRUEBA
+>Realizar la prueba de escritorio correspondiente al ejercicio 12.
 
 ### 2da PARTE (Estructuras Selectivas)
 ---
+15. ALGORITMO
+>Escribir un algoritmo que determine si un número es menor o mayor a otro
 
-16. Escribir un algoritmo que permita al usuario ingresar un número e informe si el mismo es PAR (ver operador
-mod). DF – PS
+16. ALGORITMO
+>Escribir un algoritmo que permita al usuario ingresar un número e informe si el mismo es PAR (ver operador
+>mod). DF – PS
 
-17. Escribir un algoritmo que permita al usuario ingresar un numero e informe si el número ingresado es múltiplo
-de 6. DF – PS
+17. ALGORITMO
+>Escribir un algoritmo que permita al usuario ingresar un numero e informe si el número ingresado es múltiplo
+>de 6. DF – PS
 
-18. Escribir un algoritmo que permita al usuario ingresar un número, y en caso de que este sea impar, se informe
-el resultado de ese número multiplicado por 2. DF – PS
+18. ALGORITMO
+>Escribir un algoritmo que permita al usuario ingresar un número, y en caso de que este sea impar, se informe
+>el resultado de ese número multiplicado por 2. DF – PS
 
-19. Se necesita un algoritmo que permita al usuario ingrese un número e informe si el mismo es PAR o IMPAR
-(ver operador mod). DF – PS
+19. ALGORITMO
+>Se necesita un algoritmo que permita al usuario ingrese un número e informe si el mismo es PAR o IMPAR
+>(ver operador mod). DF – PS
 
-20. Se necesita un algoritmo que permita al usuario el ingreso de dos números e informe al usuario si el primer
-número ingresado es mayor al segundo, si la situación es al revés o si son iguales. DF – PS - PY
-21. Se requiere de un algoritmo que permita al usuario ingresar 3 números distintos e indique cuál de ellos es
-el mayor. DF – PS - PY
+20. ALGORITMO
+>Se necesita un algoritmo que permita al usuario el ingreso de dos números e informe al usuario si el primer
+>número ingresado es mayor al segundo, si la situación es al revés o si son iguales. DF – PS - PY
 
-22. Se necesita de un algoritmo que calcule la cantidad de dinero que deberá pagar un cliente, teniendo en
-cuenta el monto total de la compra. Si el monto de la compra es superior a los $5.000 y el cliente paga en
-efectivo se le debe aplicar un descuento del 15%, si la compra es mayor a $5.000 y paga con tarjeta se le
-debe aplicar un descuento del 10%, si la compra es mayor a $2.000 se le debe aplicar un descuento del
-10% y si es menor no posee descuento. DF – PS- PY
+21. ALGORITMO
+>Se requiere de un algoritmo que permita al usuario ingresar 3 números distintos e indique cuál de ellos es
+>el mayor. DF – PS - PY
+
+22.ALGORITMO
+>Se necesita de un algoritmo que calcule la cantidad de dinero que deberá pagar un cliente, teniendo en
+>cuenta el monto total de la compra. Si el monto de la compra es superior a los $5.000 y el cliente paga en
+>efectivo se le debe aplicar un descuento del 15%, si la compra es mayor a $5.000 y paga con tarjeta se le
+>debe aplicar un descuento del 10%, si la compra es mayor a $2.000 se le debe aplicar un descuento del
+>10% y si es menor no posee descuento. DF – PS- PY
 
 23. Se requiere un algoritmo que calcule el sueldo neto de un trabajador. Para ello, el algoritmo debe admitir el
 ingreso del monto a cobrar por horas y el total de horas trabajadas. Si el empleado trabajo más de 160 horas
@@ -126,16 +136,18 @@ e. Maternidad: $3.500
 f. Otro: $3.000
 DF – PS - PY
 
-26. Se requiere un algoritmo que solicite ingresar:
-a. Importe de ventas de refacciones.
-b. Importe de ventas de servicio.
-c. Importe de ventas de autos y camiones.
+26.  ALGORITMO
+>Se requiere un algoritmo que solicite ingresar:
+>a. Importe de ventas de refacciones.
+>b. Importe de ventas de servicio.
+>c. Importe de ventas de autos y camiones.
+>
+>
+>Calcule el importe TOTAL sumando los tres importes anteriores y el promedio de ventas (TOTAL / 3) y
+>muestre al usuario los resultados de este cálculo. Si el promedio de ventas es mayor o igual a $50.000
+>deberá mostrar el mensaje: “Se alcanzó el objetivo” de lo contrario deberá mostrar el mensaje “Buscar
+>nuevas estrategias de ventas”. DF – PS - PY
 
-
-Calcule el importe TOTAL sumando los tres importes anteriores y el promedio de ventas (TOTAL / 3) y
-muestre al usuario los resultados de este cálculo. Si el promedio de ventas es mayor o igual a $50.000
-deberá mostrar el mensaje: “Se alcanzó el objetivo” de lo contrario deberá mostrar el mensaje “Buscar
-nuevas estrategias de ventas”. DF – PS - PY
 27. Se requiere un algoritmo que solicite ingresar:
 a. Nombre del Artículo.
 b. Precio o costo unitario.
