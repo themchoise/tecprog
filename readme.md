@@ -1,85 +1,86 @@
+![Hola](https://img.shields.io/badge/Maximiliano_Joyce-Tecnicas_de_Programacion_Tp-blue)
 
-# HOLA !
+**Repositorio con ejercicios del TP en Python**
+
+---
 
 1. SUMA DE DOS NÚMEROS:
 
-ESCRIBIR UN ALGORITMO QUE PIDA AL USUARIO DOS NÚMEROS Y MUESTRE
-EN PANTALLA LA SUMA DE AMBOS.
+
+>ESCRIBIR UN ALGORITMO QUE PIDA AL USUARIO DOS NÚMEROS Y MUESTRE
+>EN PANTALLA LA SUMA DE AMBOS.
+
 
 2. CÁLCULO DE LA EDAD:
 
-ESCRIBIR UN ALGORITMO QUE PIDA AL USUARIO SU AÑO DE NACIMIENTO Y
-LUEGO MUESTRE EN SU EDAD ACTUAL.
+>ESCRIBIR UN ALGORITMO QUE PIDA AL USUARIO SU AÑO DE NACIMIENTO Y
+>LUEGO MUESTRE EN SU EDAD ACTUAL.
 
 3. CONVERSIÓN DE TEMPERATURA:
 
-ESCRIBIR UN ALGORITMO QUE CONVIERTA UNA TEMPERATURA EN GRADOS
-CELSIUS A FAHRENHEIT. EL USUARIO DEBE INGRESAR LA TEMPERATURA
-EN GRADOS CELSIUS.
+>ESCRIBIR UN ALGORITMO QUE CONVIERTA UNA TEMPERATURA EN GRADOS
+>CELSIUS A FAHRENHEIT. EL USUARIO DEBE INGRESAR LA TEMPERATURA
+>EN GRADOS CELSIUS.
 
 4. CÁLCULO DE ÁREA DE UN TRIÁNGULO:
 
-ESCRIBIR UN PROGRAMA QUE CALCULE EL ÁREA DE UN TRIÁNGULO, DADOS
-SU BASE Y ALTURA. EL USUARIO DEBE INGRESAR LA BASE Y LA ALTURA.
+>ESCRIBIR UN PROGRAMA QUE CALCULE EL ÁREA DE UN TRIÁNGULO, DADOS
+S>U BASE Y ALTURA. EL USUARIO DEBE INGRESAR LA BASE Y LA ALTURA.
 
 5. CÁLCULO DE PROMEDIO DE
 NOTAS:
 
-ESCRIBIR UN ALGORITMO QUE CALCULE EL PROMEDIO DE TRES NOTAS INGRESADAS POR
-EL USUARIO.
+>ESCRIBIR UN ALGORITMO QUE CALCULE EL PROMEDIO DE TRES NOTAS INGRESADAS POR
+>EL USUARIO.
 
 6. CONVERSIÓN DE MONEDA:
 
-ESCRIBIR UN PROGRAMA QUE CONVIERTA UNA CANTIDAD DE PESOS ARGENTINOS
-A DÓLARES ESTADOUNIDENSES(BLUE), UTILIZANDO UN TIPO DE CAMBIO FIJO. EL
-USUARIO DEBE INGRESAR LA CANTIDAD DE PESOS.
+>ESCRIBIR UN PROGRAMA QUE CONVIERTA UNA CANTIDAD DE PESOS ARGENTINOS
+>A DÓLARES ESTADOUNIDENSES(BLUE), UTILIZANDO UN TIPO DE CAMBIO FIJO. EL
+>USUARIO DEBE INGRESAR LA CANTIDAD DE PESOS.
 
 7. CÁLCULO DE DISTANCIA ENTRE DOS
-PUNTOS:
+>PUNTOS:
+>ESCRIBIR UN PROGRAMA QUE CALCULE LA DISTANCIA ENTRE DOS PUNTOS EN UN PLANO CARTESIANO,
+>DADOS SUS COORDENADAS. EL USUARIO DEBE INGRESAR LAS COORDENADAS DE AMBOS PUNTOS.
 
-ESCRIBIR UN PROGRAMA QUE CALCULE LA DISTANCIA ENTRE DOS PUNTOS EN UN PLANO CARTESIANO,
-DADOS SUS COORDENADAS. EL USUARIO DEBE INGRESAR LAS COORDENADAS DE AMBOS PUNTOS.
-
-HACER Distancia <- (((X2 – X1)**2) + ((Y2 - Y1)**2))**1/2
+>HACER Distancia <- (((X2 – X1)**2) + ((Y2 - Y1)**2))**1/2
 
 8. CÁLCULO DE RAÍZ CUADRADA:
 
-ESCRIBIR UN ALGORITMO QUE CALCULE LA RAÍZ CUADRADA DE
-UN NÚMERO INGRESADO POR EL USUARIO.
+>ESCRIBIR UN ALGORITMO QUE CALCULE LA RAÍZ CUADRADA DE
+>UN NÚMERO INGRESADO POR EL USUARIO.
 
 9. CONVERSIÓN DE TIEMPO:
 
-ESCRIBIR UN ALGORITMO QUE CONVIERTA UNA CANTIDAD DE MINUTOS A HORAS Y
-MINUTOS. EL USUARIO DEBE INGRESAR LA CANTIDAD DE MINUTOS.
+>ESCRIBIR UN ALGORITMO QUE CONVIERTA UNA CANTIDAD DE MINUTOS A HORAS Y
+>MINUTOS. EL USUARIO DEBE INGRESAR LA CANTIDAD DE MINUTOS.
 
 10. CÁLCULO DE ÁREA DE UN CÍRCULO:
 (PI X R2)
 
-ESCRIBIR UN PROGRAMA QUE CALCULE EL ÁREA DE UN CÍRCULO, DADO SU
-RADIO. EL USUARIO DEBE INGRESAR EL VALOR DEL RADIO.
+>ESCRIBIR UN PROGRAMA QUE CALCULE EL ÁREA DE UN CÍRCULO, DADO SU
+>RADIO. EL USUARIO DEBE INGRESAR EL VALOR DEL RADIO.
 
 11. MENOR O MAYOR
 
-ESCRIBIR UN ALGORITMO QUE DETERMINE SI UN NUMERO ES MENOR O
-MAYOR A OTRO
+>ESCRIBIR UN ALGORITMO QUE DETERMINE SI UN NUMERO ES MENOR O
+>MAYOR A OTRO
 
-12. Escribir un algoritmo que permita al usuario calcular una potencia y luego muestre el resultado de este
-cálculo. Para ello el usuario debe ingresar un número y luego su exponente. Es decir. Ejemplo: 52 = 25 (5
-elevado al cuadrado, es igual a 25) DF – PS
-13. Escribir un algoritmo que permita al usuario ingresar dos números (el 1er número es el radicando, y el 2do
+12. ALGORITMO
+>Escribir un algoritmo que permita al usuario calcular una potencia y luego muestre el resultado de este
+>cálculo. Para ello el usuario debe ingresar un número y luego su exponente. Es decir. Ejemplo: 52 = 25 (5
+>elevado al cuadrado, es igual a 25) DF – PS
+
+14. Escribir un algoritmo que permita al usuario ingresar dos números (el 1er número es el radicando, y el 2do
 número es el índice) para calcular la raíz y luego le muestre al usuario el resultado de este cálculo. Ejemplo:
 √25 = 5 (raíz cuadrada de 25, es igual a 5, se deberá permitir al usuario ingresar el 25 y el 2 que actuará de
 indice) DF – PS
 14.Realizar la prueba de escritorio correspondiente al ejercicio 1.
 15.Realizar la prueba de escritorio correspondiente al ejercicio 2.
 
-2da PARTE (Estructuras Selectivas)
-
-GOBIERNO DE LA CIUDAD DE BUENOS AIRES
-Ministerio de Educación
-Dirección de Formación Técnico Superior
-Instituto de Formación Técnico Superior N° 18
-Mansilla 3643 - C1425BBW - Capital Federal
+### 2da PARTE (Estructuras Selectivas)
+---
 
 16. Escribir un algoritmo que permita al usuario ingresar un número e informe si el mismo es PAR (ver operador
 mod). DF – PS
@@ -130,12 +131,6 @@ a. Importe de ventas de refacciones.
 b. Importe de ventas de servicio.
 c. Importe de ventas de autos y camiones.
 
-GOBIERNO DE LA CIUDAD DE BUENOS AIRES
-Ministerio de Educación
-Dirección de Formación Técnico Superior
-Instituto de Formación Técnico Superior N° 18
-Mansilla 3643 - C1425BBW - Capital Federal
-
 
 Calcule el importe TOTAL sumando los tres importes anteriores y el promedio de ventas (TOTAL / 3) y
 muestre al usuario los resultados de este cálculo. Si el promedio de ventas es mayor o igual a $50.000
@@ -148,7 +143,9 @@ c. Número de departamento en donde se localiza el producto.
 En base a los datos ingresados se deberá calcular el incremento de los costos del producto y mostrar el
 costo final. DF – PS
 
-Estructuras Repetitivas
+
+### Estructuras Repetitivas
+---
 
 28. Confeccionar un algoritmo que resuelva el siguiente problema: Dado 2 números (rango inferior y rango
 superior) diseñar un algoritmo que devuelva la cantidad de números impares que hay en el rango definido.
