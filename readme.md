@@ -108,33 +108,36 @@ NOTAS:
 >Se requiere de un algoritmo que permita al usuario ingresar 3 números distintos e indique cuál de ellos es
 >el mayor. DF – PS - PY
 
-22.ALGORITMO
+22. ALGORITMO
 >Se necesita de un algoritmo que calcule la cantidad de dinero que deberá pagar un cliente, teniendo en
 >cuenta el monto total de la compra. Si el monto de la compra es superior a los $5.000 y el cliente paga en
 >efectivo se le debe aplicar un descuento del 15%, si la compra es mayor a $5.000 y paga con tarjeta se le
 >debe aplicar un descuento del 10%, si la compra es mayor a $2.000 se le debe aplicar un descuento del
 >10% y si es menor no posee descuento. DF – PS- PY
 
-23. Se requiere un algoritmo que calcule el sueldo neto de un trabajador. Para ello, el algoritmo debe admitir el
-ingreso del monto a cobrar por horas y el total de horas trabajadas. Si el empleado trabajo más de 160 horas
-mensuales se deben considerar la diferencia como horas extras y el monto por hora deberá ser el doble del
-valor ingresado en un inicio. DF – PS - PY
+23. ALGORITMO 
+>Se requiere un algoritmo que calcule el sueldo neto de un trabajador. Para ello, el algoritmo debe admitir el
+>ingreso del monto a cobrar por horas y el total de horas trabajadas. Si el empleado trabajo más de 160 horas
+>mensuales se deben considerar la diferencia como horas extras y el monto por hora deberá ser el doble del
+>valor ingresado en un inicio. DF – PS - PY
 
-24. Se requiere un algoritmo que calcule la factura de luz eléctrica. Para ello, se debe permitir el ingreso de Kw
-por mes. Para calcular el costo total se debe considerar que los primeros 30 Kw cuestan $6.03, los siguientes
-90 cuestan $6.19, los siguientes 80 Kw $6.78 y los siguientes $7.24. DF – PS - PY
+24. ALGORITMO 
+>Se requiere un algoritmo que calcule la factura de luz eléctrica. Para ello, se debe permitir el ingreso de Kw
+>por mes. Para calcular el costo total se debe considerar que los primeros 30 Kw cuestan $6.03, los siguientes
+>90 cuestan $6.19, los siguientes 80 Kw $6.78 y los siguientes $7.24. DF – PS - PY
 
-25. Se requiere un algoritmo que calcule el costo de internación de un paciente. Para ello, se debe solicitar
-ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
-de internación son las siguientes:
-a. Pediatría
-b. Maternidad
-c. Otro
-Y los costros de internación por especialidad son los siguientes:
-d. Pediatría: $2.500
-e. Maternidad: $3.500
-f. Otro: $3.000
-DF – PS - PY
+25. ALGORITMO 
+>Se requiere un algoritmo que calcule el costo de internación de un paciente. Para ello, se debe solicitar
+>ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
+>de internación son las siguientes:
+>a. Pediatría
+>b. Maternidad
+>c. Otro
+>Y los costros de internación por especialidad son los siguientes:
+>d. Pediatría: $2.500
+>e. Maternidad: $3.500
+>f. Otro: $3.000
+>DF – PS - PY
 
 26.  ALGORITMO
 >Se requiere un algoritmo que solicite ingresar:
@@ -166,15 +169,17 @@ DF – PS - PY
 ### Estructuras Repetitivas
 ---
 
-28. Confeccionar un algoritmo que resuelva el siguiente problema: Dado 2 números (rango inferior y rango
-superior) diseñar un algoritmo que devuelva la cantidad de números impares que hay en el rango definido.
-Solo DF. Ej: 10 - 50 (incrementando), O de 1350 a 1000 (decrementando). DF – PS
+28. ALGORITMO
+> Confeccionar un algoritmo que resuelva el siguiente problema: Dado 2 números (rango inferior y rango
+>superior) diseñar un algoritmo que devuelva la cantidad de números impares que hay en el rango definido.
+>Solo DF. Ej: 10 - 50 (incrementando), O de 1350 a 1000 (decrementando). DF – PS
 
-29. Confeccionar un algoritmo que resuelva el siguiente problema: Dada un código alfanumérico, diseñar un
-algoritmo que valide el código una cantidad de veces que el usuario defina. Si código es correcto en algún
-intento, mostrar por pantalla: “Logueo Exitoso!!!”. Sino “Verifique su código y vuelva a cargarlo” hasta que
-agote las veces definidas. En el último intento debe cerrarse el programa mostrando el mensaje “Ha sido
-bloqueado por superar la cantidad de intentos posibles”. DF – PS
+29. AGORITMO 
+>Confeccionar un algoritmo que resuelva el siguiente problema: Dada un código alfanumérico, diseñar un
+>algoritmo que valide el código una cantidad de veces que el usuario defina. Si código es correcto en algún
+>intento, mostrar por pantalla: “Logueo Exitoso!!!”. Sino “Verifique su código y vuelva a cargarlo” hasta que
+>agote las veces definidas. En el último intento debe cerrarse el programa mostrando el mensaje “Ha sido
+>bloqueado por superar la cantidad de intentos posibles”. DF – PS
 
 Estructuras de Datos – Arreglos unidimensionales
 30. Se requiere de un algoritmo que almacene en un arreglo 10 números ingresados por un usuario y luego los
