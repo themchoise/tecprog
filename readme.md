@@ -181,22 +181,29 @@ NOTAS:
 >agote las veces definidas. En el último intento debe cerrarse el programa mostrando el mensaje “Ha sido
 >bloqueado por superar la cantidad de intentos posibles”. DF – PS
 
-Estructuras de Datos – Arreglos unidimensionales
-30. Se requiere de un algoritmo que almacene en un arreglo 10 números ingresados por un usuario y luego los
-muestre en el mismo orden en que los ingreso. . DF – PS
+### Estructuras de Datos – Arreglos unidimensionales
+---
 
-31. Se requiere de un algoritmo que almacene en un Arreglo 25 números aleatorios (ingresados por el usuario
-– con la función AZAR(1-100) es lo que se coloca dentro del símbolo), cuyos valores se encuentren entre 1
-y 100 y luego informe (mostrar por pantalla) la suma y el promedio de todos los números ingresados. DF –
-PS
+30. ALGORITMO
+>Se requiere de un algoritmo que almacene en un arreglo 10 números ingresados por un usuario y luego los
+>muestre en el mismo orden en que los ingreso. . DF – PS
 
-32. Se requiere de un algoritmo que permita ingresar en un arreglo 6 elementos de cadenas de caracteres.
-Luego, se deberá copiar los elementos del arreglo en otro arreglo, pero en orden inverso, y mostrarlo por la
-pantalla. DF – PS
+31. ALGORITMO
+>Se requiere de un algoritmo que almacene en un Arreglo 25 números aleatorios (ingresados por el usuario
+>– con la función AZAR(1-100) es lo que se coloca dentro del símbolo), cuyos valores se encuentren entre 1
+>y 100 y luego informe (mostrar por pantalla) la suma y el promedio de todos los números ingresados. DF –
+>PS
 
-33. Ejercicio de inserción en arreglo desordenado. Se tienen un arreglo de 50 componentes con la nota del
-parcial de 45 alumnos. Diseñe un algoritmo para insertar la nota del alumno 46. DF – PS
+32. ALGORITMO
+> Se requiere de un algoritmo que permita ingresar en un arreglo 6 elementos de cadenas de caracteres.
+>Luego, se deberá copiar los elementos del arreglo en otro arreglo, pero en orden inverso, y mostrarlo por la
+>pantalla. DF – PS
 
-34. Ejercicio de eliminación en un arreglo desordenado. Teniendo en cuenta el enunciado del ejercicio anterior
-diseñe un algoritmo que elimine el valor de lanota de un alumno que tenga menos de 40 puntos. Si hubieran
-más de una nota en esa condición deberá volver a ejecutar el procedimiento. DF – PS
+33. ALGORITMO
+>Ejercicio de inserción en arreglo desordenado. Se tienen un arreglo de 50 componentes con la nota del
+>parcial de 45 alumnos. Diseñe un algoritmo para insertar la nota del alumno 46. DF – PS
+
+34. ALGORITMO
+>Ejercicio de eliminación en un arreglo desordenado. Teniendo en cuenta el enunciado del ejercicio anterior
+>diseñe un algoritmo que elimine el valor de lanota de un alumno que tenga menos de 40 puntos. Si hubieran
+>más de una nota en esa condición deberá volver a ejecutar el procedimiento. DF – PS
