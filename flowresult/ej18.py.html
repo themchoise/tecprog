@@ -13,26 +13,19 @@
         <script>
             code= `
 start=>start: start
-operation131=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
-de internación son las siguientes:
-a. Pediatría
-b. Maternidad
-c. Otro
-Y los costros de internación por especialidad son los siguientes:
-d. Pediatría: $2.500
-e. Maternidad: $3.500
-f. Otro: $3.000
-DF – PS - PY
- """
-operation132=>operation: pediatria = 'pediatria,2500'
-operation133=>operation: Maternidad = 'maternidad,3500'
-operation134=>operation: otro = 'otro,3000'
+input135=>input: numero = int(input("Por favor, ingrese un número: "))
+condition136=>condition: if numero % 2 != 0
+operation137=>operation: resultado = numero * 2
+output138=>output: print(f"El número es impar. El resultado de {numero} multiplicado por 2 es {resultado}.")
+output139=>output: print(f"El número {numero} es par.")
 end=>end: end
-start->operation131
-operation131->operation132
-operation132->operation133
-operation133->operation134
-operation134->end
+start->input135
+input135->condition136
+condition136(yes)->operation137
+operation137->output138
+condition136(no)->output139
+output138->end
+output139->end
 
 `;
             chart = flowchart.parse(code);

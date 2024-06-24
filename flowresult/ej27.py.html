@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>py2flowchart</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.18.0/flowchart.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <pre id="code" style="display:none"></pre>
+        <script>
+            code= `
+start=>start: start
+input143=>input: art_nombre = input("Ingrese el nombre del articulo  \n")
+input144=>input: art_precio = int(input("Ingrese el precio unitario  \n"))
+operation145=>operation:          >1     - 10%
+         >2     - 15%
+         >3     - 20%
+         >Otro  - 5%""")
+input146=>input: art_depto= int(input("Ingrese departamento  \n"))
+operation147=>operation: art_incremento = 0
+operation148=>operation: incremento =0
+operation149=>operation:     case 1:
+        art_incremento = art_precio+ art_precio*0.1
+        incremento = 0.1
+    case 2:
+        art_incremento  = art_precio+ art_precio*0.15
+        incremento = 0.15
+    case 3:
+        art_incremento  = art_precio+ art_precio*0.2
+        incremento = 0.2
+output150=>output: print(f'El articulo {art_nombre} con precio {art_precio} ahora vale {art_incremento} por incremento ${incremento*100}%  pertenece al departamento {art_depto}')
+end=>end: end
+start->input143
+input143->input144
+input144->operation145
+operation145->input146
+input146->operation147
+operation147->operation148
+operation148->operation149
+operation149->output150
+output150->end
+
+`;
+            chart = flowchart.parse(code);
+            chart.drawSVG('canvas', {"line-width": 2});
+			console.log(code);
+			var code_pre = code.replaceAll("&", "&amp;").replaceAll("<", "&lt;");
+            document.getElementById("code").innerHTML = code_pre;
+        </script>
+		<script>
+		// double click to copy svg to clipboard
+		document.ondblclick = async () => {
+			var svg = document.getElementsByTagName('svg')[0];
+			await navigator.clipboard.writeText(svg.outerHTML);
+		}
+		</script>
+		<!-- see https://github.com/dstang2000/py2flowchart -->
+    </body>
+</html>

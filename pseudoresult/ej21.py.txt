@@ -1,0 +1,11 @@
+num_uno = int(input("Ingrese el valor del primer numero  \n"))
+num_dos = int(input("Ingrese el valor del segundo numero  \n"))
+num_tres = int(input("Ingrese el valor del tercer numero  \n"))
+SI num_uno > num_dos and num_uno > num_tres ENTONCES
+mayor = num_uno
+elif num_dos > num_uno and num_dos > num_tres:
+mayor = num_dos
+SINO
+mayor = num_tres
+IMPRIMIR f'El numero {mayor} es el mayor'
+FIN

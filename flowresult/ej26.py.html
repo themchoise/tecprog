@@ -13,22 +13,22 @@
         <script>
             code= `
 start=>start: start
-input98=>input: ventas_refacciones = int(input("Ingrese Importe de ventas de refacciones \n"))
-input99=>input: ventas_servicio = int(input("Importe de ventas de servicio\n"))
-input100=>input: ventas_autos_camiones = int(input("Importe de ventas de autos y camiones \n"))
-operation101=>operation: imp_total = ventas_refacciones+ ventas_servicio + ventas_autos_camiones
-operation102=>operation: promedio = imp_total / 3
-operation103=>operation: x = lambda a : 'Se alcanzo el objetivo' if a > 50000 else 'Buscar nuevas estrategias de ventas'
-output104=>output: print(x(promedio))
+input1=>input: ventas_refacciones = int(input("Ingrese Importe de ventas de refacciones \n"))
+input2=>input: ventas_servicio = int(input("Importe de ventas de servicio\n"))
+input3=>input: ventas_autos_camiones = int(input("Importe de ventas de autos y camiones \n"))
+operation4=>operation: imp_total = ventas_refacciones+ ventas_servicio + ventas_autos_camiones
+operation5=>operation: promedio = imp_total / 3
+operation6=>operation: x = lambda a : 'Se alcanzo el objetivo' if a > 50000 else 'Buscar nuevas estrategias de ventas'
+output7=>output: print(x(promedio))
 end=>end: end
-start->input98
-input98->input99
-input99->input100
-input100->operation101
-operation101->operation102
-operation102->operation103
-operation103->output104
-output104->end
+start->input1
+input1->input2
+input2->input3
+input3->operation4
+operation4->operation5
+operation5->operation6
+operation6->output7
+output7->end
 
 `;
             chart = flowchart.parse(code);

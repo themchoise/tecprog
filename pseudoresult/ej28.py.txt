@@ -1,0 +1,18 @@
+rango_sup = int(input("Importe rango superior\n"))
+rango_inf = int(input("Ingrese rango inferior \n"))
+arr = None
+impares = []
+SI (rango_sup > rango_inf ) ENTONCES
+arr=list(range(rango_inf,rango_sup))
+PARA x in arr HACER
+SI not (x % 2 == 0 ) ENTONCES
+impares.append(x)
+SINO
+arr=list(range(rango_sup,rango_inf))
+PARA x in arr HACER
+SI not (x % 2 == 0 ) ENTONCES
+impares.append(x)
+impares=impares[::-1]
+IMPRIMIR 'Numeros impares:'
+IMPRIMIR impares
+FIN

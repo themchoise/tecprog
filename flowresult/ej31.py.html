@@ -13,26 +13,28 @@
         <script>
             code= `
 start=>start: start
-operation131=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
-de internación son las siguientes:
-a. Pediatría
-b. Maternidad
-c. Otro
-Y los costros de internación por especialidad son los siguientes:
-d. Pediatría: $2.500
-e. Maternidad: $3.500
-f. Otro: $3.000
-DF – PS - PY
- """
-operation132=>operation: pediatria = 'pediatria,2500'
-operation133=>operation: Maternidad = 'maternidad,3500'
-operation134=>operation: otro = 'otro,3000'
+operation188=>operation: rango_usuario = 25
+operation189=>operation: arr_numeros = []
+condition190=>condition: for x in range(rango_usuario)|past
+input191=>input: num_ingresado = int(input("Ingrese un numero del 1 al 100 \n"))
+condition192=>condition: if num_ingresado >= 1 and num_ingresado <= 100
+operation193=>operation: arr_numeros.append(num_ingresado)
+operation194=>operation: pass
+output195=>output: print("El rango es de 1 a 100")
+output196=>output: print(f'La suma de los numeros ingresados es {sum(arr_numeros)} , su promedio es {sum(arr_numeros)/rango_usuario}')
 end=>end: end
-start->operation131
-operation131->operation132
-operation132->operation133
-operation133->operation134
-operation134->end
+start->operation188
+operation188->operation189
+operation189->condition190
+condition190(yes)->input191
+input191->condition192
+condition192(yes)->operation193
+condition192(no)->operation194
+operation193->output195
+operation194->output195
+output195(left)->condition190
+condition190(no)->output196
+output196->end
 
 `;
             chart = flowchart.parse(code);

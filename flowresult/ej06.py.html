@@ -13,20 +13,20 @@
         <script>
             code= `
 start=>start: start
-operation20=>operation: import requests
-input21=>input: pesos = int(input("Ingrese la cantidad en pesos Argentinos \n"))
-operation22=>operation: dolar_blue = 1000
-operation23=>operation:     dolar_blue = requests.get("https://dolarapi.com/v1/dolares/blue").json()["venta"]
+operation107=>operation: import requests
+input108=>input: pesos = int(input("Ingrese la cantidad en pesos Argentinos \n"))
+operation109=>operation: dolar_blue = 1000
+operation110=>operation:     dolar_blue = requests.get("https://dolarapi.com/v1/dolares/blue").json()["venta"]
 except:
     None
-output24=>output: print(f'El equivalente en dolares es {pesos/dolar_blue}')
+output111=>output: print(f'El equivalente en dolares es {pesos/dolar_blue}')
 end=>end: end
-start->operation20
-operation20->input21
-input21->operation22
-operation22->operation23
-operation23->output24
-output24->end
+start->operation107
+operation107->input108
+input108->operation109
+operation109->operation110
+operation110->output111
+output111->end
 
 `;
             chart = flowchart.parse(code);

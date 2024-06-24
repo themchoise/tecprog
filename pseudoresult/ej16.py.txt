@@ -1,0 +1,6 @@
+num = int(input("Ingrese el valor del primer numero  \n"))
+SI num % 2 == 0 ENTONCES
+IMPRIMIR f'El numero {num} es par'
+quit()
+IMPRIMIR f'El numero {num} es impar'
+FIN

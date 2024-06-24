@@ -13,16 +13,16 @@
         <script>
             code= `
 start=>start: start
-input1=>input: num_uno = int(input("Ingrese el primer numero \n"))
-input2=>input: num_dos = int(input("Ingrese el segundo numero \n"))
-operation3=>operation: res_suma =  num_uno + num_dos
-subroutine4=>subroutine: print ( f'\n el numero es: {res_suma}')
+input211=>input: num_uno = int(input("Ingrese el primer numero \n"))
+input212=>input: num_dos = int(input("Ingrese el segundo numero \n"))
+operation213=>operation: res_suma =  num_uno + num_dos
+subroutine214=>subroutine: print ( f'\n el numero es: {res_suma}')
 end=>end: end
-start->input1
-input1->input2
-input2->operation3
-operation3->subroutine4
-subroutine4->end
+start->input211
+input211->input212
+input212->operation213
+operation213->subroutine214
+subroutine214->end
 
 `;
             chart = flowchart.parse(code);

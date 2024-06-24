@@ -13,26 +13,24 @@
         <script>
             code= `
 start=>start: start
-operation131=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
-de internación son las siguientes:
-a. Pediatría
-b. Maternidad
-c. Otro
-Y los costros de internación por especialidad son los siguientes:
-d. Pediatría: $2.500
-e. Maternidad: $3.500
-f. Otro: $3.000
-DF – PS - PY
- """
-operation132=>operation: pediatria = 'pediatria,2500'
-operation133=>operation: Maternidad = 'maternidad,3500'
-operation134=>operation: otro = 'otro,3000'
+input39=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
+input40=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
+condition41=>condition: if num_uno > num_dos
+output42=>output: print(f'El numero {num_uno} es mayor que {num_dos}')
+condition43=>condition: if num_uno < num_dos
+output44=>output: print(f'El numero {num_dos} es menor que {num_uno}')
+output45=>output: print(f'El numero {num_dos} es igual que {num_uno}')
 end=>end: end
-start->operation131
-operation131->operation132
-operation132->operation133
-operation133->operation134
-operation134->end
+start->input39
+input39->input40
+input40->condition41
+condition41(yes)->output42
+condition41(no)->condition43
+condition43(yes)->output44
+condition43(no)->output45
+output42->end
+output44->end
+output45->end
 
 `;
             chart = flowchart.parse(code);

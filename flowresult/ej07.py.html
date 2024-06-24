@@ -13,18 +13,18 @@
         <script>
             code= `
 start=>start: start
-input25=>input: x1 = int(input("Ingrese el valor de x1 \n"))
-input26=>input: x2 = int(input("Ingrese el valor de x2 \n"))
-input27=>input: y1 = int(input("Ingrese el valor de y1 \n"))
-input28=>input: y2 = int(input("Ingrese el valor de y2 \n"))
-output29=>output: print(f'Distancia { (((x2-x1)**2) + ((y2 - y1)**2) )**1/2 }')
+input66=>input: x1 = int(input("Ingrese el valor de x1 \n"))
+input67=>input: x2 = int(input("Ingrese el valor de x2 \n"))
+input68=>input: y1 = int(input("Ingrese el valor de y1 \n"))
+input69=>input: y2 = int(input("Ingrese el valor de y2 \n"))
+output70=>output: print(f'Distancia { (((x2-x1)**2) + ((y2 - y1)**2) )**1/2 }')
 end=>end: end
-start->input25
-input25->input26
-input26->input27
-input27->input28
-input28->output29
-output29->end
+start->input66
+input66->input67
+input67->input68
+input68->input69
+input69->output70
+output70->end
 
 `;
             chart = flowchart.parse(code);

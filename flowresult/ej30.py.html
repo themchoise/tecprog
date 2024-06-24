@@ -13,26 +13,23 @@
         <script>
             code= `
 start=>start: start
-operation131=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
-de internación son las siguientes:
-a. Pediatría
-b. Maternidad
-c. Otro
-Y los costros de internación por especialidad son los siguientes:
-d. Pediatría: $2.500
-e. Maternidad: $3.500
-f. Otro: $3.000
-DF – PS - PY
- """
-operation132=>operation: pediatria = 'pediatria,2500'
-operation133=>operation: Maternidad = 'maternidad,3500'
-operation134=>operation: otro = 'otro,3000'
+operation33=>operation: >Se requiere de un algoritmo que almacene en un arreglo 10 números ingresados por un usuario y luego los
+>muestre en el mismo orden en que los ingreso. . DF – PS
+"""
+operation34=>operation: arr=[]
+operation35=>operation: rango=10
+condition36=>condition: for x in range(rango)|past
+input37=>input: arr.append(int(input(f'[{x+1}|{rango}]Ingrese un numero:')))
+output38=>output: print(arr)
 end=>end: end
-start->operation131
-operation131->operation132
-operation132->operation133
-operation133->operation134
-operation134->end
+start->operation33
+operation33->operation34
+operation34->operation35
+operation35->condition36
+condition36(yes)->input37
+input37(left)->condition36
+condition36(no)->output38
+output38->end
 
 `;
             chart = flowchart.parse(code);

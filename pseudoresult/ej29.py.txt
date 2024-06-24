@@ -1,0 +1,14 @@
+intentos = 3
+codigo_alfa = "clave123"
+acceso_exitoso = False
+PARA x in range(intentos) HACER
+input_user = input("Ingrese la contraseña \n")
+SI (input_user == codigo_alfa) ENTONCES
+IMPRIMIR "Logueo Exitoso"
+acceso_exitoso=True
+break
+SINO
+IMPRIMIR f'Verifique su codigo y vuelva a cargarlo, le quedan: {intentos- (x+1)} intentos \n'
+SI not (acceso_exitoso) ENTONCES
+IMPRIMIR "Ha sido bloqueado por superar la cantidad de intentos posibles"
+FIN

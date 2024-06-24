@@ -1,0 +1,10 @@
+notas_alumnos = [
+7, 8, 6, 9, 5, 7, 8, 10, 6, 9,
+7, 5, 6, 8, 9, 10, 7, 8, 6, 5,
+9, 7, 8, 6, 5, 7, 8, 9, 10, 6,
+7, 5, 6, 8, 9, 7, 8, 6, 10, 5,
+9, 8, 7, 6, 5, None, None, None, None, None
+]
+notas_alumnos.insert(45, 9)
+IMPRIMIR notas_alumnos
+FIN

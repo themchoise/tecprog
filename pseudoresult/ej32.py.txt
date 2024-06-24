@@ -1,0 +1,9 @@
+arr = []
+rango = 6
+new_arr = []
+PARA x in range(rango) HACER
+input_usuario=input("Ingrese una palabra \n")
+arr.append(input_usuario)
+new_arr = arr.copy()[::-1]
+IMPRIMIR new_arr
+FIN

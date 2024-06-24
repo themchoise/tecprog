@@ -13,16 +13,14 @@
         <script>
             code= `
 start=>start: start
-input39=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
-input40=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
-operation41=>operation: numero_mayor = num_uno if num_uno > num_dos else num_dos
-output42=>output: print(f'El numero mayor es {numero_mayor}')
+input128=>input: num = int(input("Ingrese el valor del primer numero  \n"))
+input129=>input: potencia = int(input("Ingrese la potencia  \n"))
+output130=>output: print(f'El resultado es {num**potencia}')
 end=>end: end
-start->input39
-input39->input40
-input40->operation41
-operation41->output42
-output42->end
+start->input128
+input128->input129
+input129->output130
+output130->end
 
 `;
             chart = flowchart.parse(code);

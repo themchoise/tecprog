@@ -13,26 +13,14 @@
         <script>
             code= `
 start=>start: start
-operation131=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
-de internación son las siguientes:
-a. Pediatría
-b. Maternidad
-c. Otro
-Y los costros de internación por especialidad son los siguientes:
-d. Pediatría: $2.500
-e. Maternidad: $3.500
-f. Otro: $3.000
-DF – PS - PY
- """
-operation132=>operation: pediatria = 'pediatria,2500'
-operation133=>operation: Maternidad = 'maternidad,3500'
-operation134=>operation: otro = 'otro,3000'
+input140=>input: num = int(input("Ingrese el valor del primer numero  \n"))
+input141=>input: potencia = int(input("Ingrese la raiz  \n"))
+output142=>output: print(f'El resultado es {num**(potencia**-1)}')
 end=>end: end
-start->operation131
-operation131->operation132
-operation132->operation133
-operation133->operation134
-operation134->end
+start->input140
+input140->input141
+input141->output142
+output142->end
 
 `;
             chart = flowchart.parse(code);

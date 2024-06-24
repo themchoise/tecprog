@@ -1,0 +1,9 @@
+rango_usuario = 25
+arr_numeros = []
+PARA x in range(rango_usuario) HACER
+num_ingresado = int(input("Ingrese un numero del 1 al 100 \n"))
+SI ( num_ingresado >= 1 and num_ingresado <= 100) ENTONCES
+arr_numeros.append(num_ingresado)
+IMPRIMIR "El rango es de 1 a 100"
+IMPRIMIR f'La suma de los numeros ingresados es {sum(arr_numeros)} , su promedio es {sum(arr_numeros)/rango_usuario}'
+FIN
