@@ -7,5 +7,5 @@ elif num_dos > num_uno and num_dos > num_tres:
 mayor = num_dos
 SINO
 mayor = num_tres
-IMPRIMIR f'El numero {mayor} es el mayor'
+ESCRIBIR "El numero mayor es el mayor"
 FIN

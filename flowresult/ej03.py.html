@@ -13,14 +13,14 @@
         <script>
             code= `
 start=>start: start
-input21=>input: grados_celsius = int(input("Ingrese los grados en CELSIUS  \n"))
-operation22=>operation: grados_fahrenheit = (grados_celsius * 9 / 5) + 32
-output23=>output: print(f'Equivalencia en Fahrenheit  {grados_fahrenheit}' )
+input9=>input: grados_celsius = int(input("Ingrese los grados en CELSIUS  \n"))
+operation10=>operation: grados_fahrenheit = (grados_celsius * 9 / 5) + 32
+output11=>output: print(f'Equivalencia en Fahrenheit  {grados_fahrenheit}' )
 end=>end: end
-start->input21
-input21->operation22
-operation22->output23
-output23->end
+start->input9
+input9->operation10
+operation10->output11
+output11->end
 
 `;
             chart = flowchart.parse(code);

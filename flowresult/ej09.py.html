@@ -13,16 +13,16 @@
         <script>
             code= `
 start=>start: start
-input215=>input: qnt_minutos = int(input("Ingrese los minutos  \n"))
-operation216=>operation: horas = int(qnt_minutos/60)
-operation217=>operation: minutos_restantes = int(qnt_minutos-(horas*60))
-output218=>output: print(f'Tiempo: Horas:{horas} , minutos:{minutos_restantes}')
+input32=>input: qnt_minutos = int(input("Ingrese los minutos  \n"))
+operation33=>operation: horas = int(qnt_minutos/60)
+operation34=>operation: minutos_restantes = int(qnt_minutos-(horas*60))
+output35=>output: print(f'Tiempo: Horas:{horas} , minutos:{minutos_restantes}')
 end=>end: end
-start->input215
-input215->operation216
-operation216->operation217
-operation217->output218
-output218->end
+start->input32
+input32->operation33
+operation33->operation34
+operation34->output35
+output35->end
 
 `;
             chart = flowchart.parse(code);

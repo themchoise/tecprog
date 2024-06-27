@@ -1,6 +1,6 @@
 num = int(input("Ingrese el valor del primer numero  \n"))
 SI num % 6 == 0 ENTONCES
-IMPRIMIR f'El numero {num} es multiplo de 6 '
+ESCRIBIR "El numero num es multiplo de 6 "
 quit()
-IMPRIMIR f'El numero {num} no es multiplo de 6'
+ESCRIBIR "El numero num no es multiplo de 6"
 FIN

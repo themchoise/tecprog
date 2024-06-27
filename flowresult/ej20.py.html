@@ -13,24 +13,24 @@
         <script>
             code= `
 start=>start: start
-input39=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
-input40=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
-condition41=>condition: if num_uno > num_dos
-output42=>output: print(f'El numero {num_uno} es mayor que {num_dos}')
-condition43=>condition: if num_uno < num_dos
-output44=>output: print(f'El numero {num_dos} es menor que {num_uno}')
-output45=>output: print(f'El numero {num_dos} es igual que {num_uno}')
+input70=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
+input71=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
+condition72=>condition: if num_uno > num_dos
+output73=>output: print(f'El numero {num_uno} es mayor que {num_dos}')
+condition74=>condition: if num_uno < num_dos
+output75=>output: print(f'El numero {num_dos} es menor que {num_uno}')
+output76=>output: print(f'El numero {num_dos} es igual que {num_uno}')
 end=>end: end
-start->input39
-input39->input40
-input40->condition41
-condition41(yes)->output42
-condition41(no)->condition43
-condition43(yes)->output44
-condition43(no)->output45
-output42->end
-output44->end
-output45->end
+start->input70
+input70->input71
+input71->condition72
+condition72(yes)->output73
+condition72(no)->condition74
+condition74(yes)->output75
+condition74(no)->output76
+output73->end
+output75->end
+output76->end
 
 `;
             chart = flowchart.parse(code);

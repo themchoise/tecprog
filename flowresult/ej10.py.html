@@ -13,14 +13,14 @@
         <script>
             code= `
 start=>start: start
-input18=>input: radio = int(input("Ingrese el valor del radio  \n"))
-operation19=>operation: area_circulo= (3.14 * (radio**2))
-output20=>output: print(f'El area es {area_circulo}')
+input36=>input: radio = int(input("Ingrese el valor del radio  \n"))
+operation37=>operation: area_circulo= (3.14 * (radio**2))
+output38=>output: print(f'El area es {area_circulo}')
 end=>end: end
-start->input18
-input18->operation19
-operation19->output20
-output20->end
+start->input36
+input36->operation37
+operation37->output38
+output38->end
 
 `;
             chart = flowchart.parse(code);

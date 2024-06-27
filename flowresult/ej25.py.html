@@ -13,7 +13,7 @@
         <script>
             code= `
 start=>start: start
-operation131=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
+operation137=>operation: ingrese en que categoría se encuentra y la cantidad de días que se encuentra hospitalizado. Las categorías
 de internación son las siguientes:
 a. Pediatría
 b. Maternidad
@@ -24,15 +24,15 @@ e. Maternidad: $3.500
 f. Otro: $3.000
 DF – PS - PY
  """
-operation132=>operation: pediatria = 'pediatria,2500'
-operation133=>operation: Maternidad = 'maternidad,3500'
-operation134=>operation: otro = 'otro,3000'
+operation138=>operation: pediatria = 'pediatria,2500'
+operation139=>operation: Maternidad = 'maternidad,3500'
+operation140=>operation: otro = 'otro,3000'
 end=>end: end
-start->operation131
-operation131->operation132
-operation132->operation133
-operation133->operation134
-operation134->end
+start->operation137
+operation137->operation138
+operation138->operation139
+operation139->operation140
+operation140->end
 
 `;
             chart = flowchart.parse(code);

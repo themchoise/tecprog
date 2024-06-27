@@ -13,21 +13,21 @@
         <script>
             code= `
 start=>start: start
-input205=>input: num = int(input("Ingrese el valor del primer numero  \n"))
-condition206=>condition: if num % 2 == 0
-output207=>output: print(f'El numero {num} es par')
-subroutine208=>subroutine: quit()
-operation209=>operation: pass
-output210=>output: print(f'El numero {num} es impar')
+input49=>input: num = int(input("Ingrese el valor del primer numero  \n"))
+condition50=>condition: if num % 2 == 0
+output51=>output: print(f'El numero {num} es par')
+subroutine52=>subroutine: quit()
+operation53=>operation: pass
+output54=>output: print(f'El numero {num} es impar')
 end=>end: end
-start->input205
-input205->condition206
-condition206(yes)->output207
-output207->subroutine208
-condition206(no)->operation209
-subroutine208->output210
-operation209->output210
-output210->end
+start->input49
+input49->condition50
+condition50(yes)->output51
+output51->subroutine52
+condition50(no)->operation53
+subroutine52->output54
+operation53->output54
+output54->end
 
 `;
             chart = flowchart.parse(code);

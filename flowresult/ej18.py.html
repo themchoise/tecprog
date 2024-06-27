@@ -13,19 +13,19 @@
         <script>
             code= `
 start=>start: start
-input135=>input: numero = int(input("Por favor, ingrese un número: "))
-condition136=>condition: if numero % 2 != 0
-operation137=>operation: resultado = numero * 2
-output138=>output: print(f"El número es impar. El resultado de {numero} multiplicado por 2 es {resultado}.")
-output139=>output: print(f"El número {numero} es par.")
+input61=>input: numero = int(input("Por favor, ingrese un número: "))
+condition62=>condition: if numero % 2 != 0
+operation63=>operation: resultado = numero * 2
+output64=>output: print(f"El número es impar. El resultado de {numero} multiplicado por 2 es {resultado}.")
+output65=>output: print(f"El número {numero} es par.")
 end=>end: end
-start->input135
-input135->condition136
-condition136(yes)->operation137
-operation137->output138
-condition136(no)->output139
-output138->end
-output139->end
+start->input61
+input61->condition62
+condition62(yes)->operation63
+operation63->output64
+condition62(no)->output65
+output64->end
+output65->end
 
 `;
             chart = flowchart.parse(code);

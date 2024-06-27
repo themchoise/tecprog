@@ -1,7 +1,7 @@
 numero = int(input("Por favor, ingrese un número: "))
 SI numero % 2 != 0 ENTONCES
 resultado = numero * 2
-IMPRIMIR f"El número es impar. El resultado de {numero} multiplicado por 2 es {resultado}."
+ESCRIBIR "El número es impar. El resultado de numero multiplicado por 2 es resultado."
 SINO
-IMPRIMIR f"El número {numero} es par."
+ESCRIBIR "El número numero es par."
 FIN

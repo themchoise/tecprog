@@ -1,4 +1,4 @@
 radio = int(input("Ingrese el valor del radio  \n"))
 area_circulo= (3.14 * (radio**2))
-IMPRIMIR f'El area es {area_circulo}'
+ESCRIBIR "El area es area_circulo"
 FIN

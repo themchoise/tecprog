@@ -9,5 +9,5 @@ elif num > 5000 and not estarjeta:
 monto_pagar = num * dto_15
 elif num > 5000 and estarjeta:
 monto_pagar = num * dto_10
-IMPRIMIR monto_pagar
+ESCRIBIR monto_pagar
 FIN

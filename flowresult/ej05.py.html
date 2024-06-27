@@ -13,16 +13,16 @@
         <script>
             code= `
 start=>start: start
-input120=>input: nota_uno = int(input("Ingrese la nota 1  \n"))
-input121=>input: nota_dos = int(input("Ingrese la nota 2  \n"))
-input122=>input: nota_tres = int(input("Ingrese la nota 3  \n"))
-output123=>output: print(f'El promedio es ${(nota_uno+nota_dos+nota_tres)/3}')
+input16=>input: nota_uno = int(input("Ingrese la nota 1  \n"))
+input17=>input: nota_dos = int(input("Ingrese la nota 2  \n"))
+input18=>input: nota_tres = int(input("Ingrese la nota 3  \n"))
+output19=>output: print(f'El promedio es ${(nota_uno+nota_dos+nota_tres)/3}')
 end=>end: end
-start->input120
-input120->input121
-input121->input122
-input122->output123
-output123->end
+start->input16
+input16->input17
+input17->input18
+input18->output19
+output19->end
 
 `;
             chart = flowchart.parse(code);

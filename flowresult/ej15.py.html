@@ -13,16 +13,16 @@
         <script>
             code= `
 start=>start: start
-input116=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
-input117=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
-operation118=>operation: numero_mayor = num_uno if num_uno > num_dos else num_dos
-output119=>output: print(f'El numero mayor es {numero_mayor}')
+input45=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
+input46=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
+operation47=>operation: numero_mayor = num_uno if num_uno > num_dos else num_dos
+output48=>output: print(f'El numero mayor es {numero_mayor}')
 end=>end: end
-start->input116
-input116->input117
-input117->operation118
-operation118->output119
-output119->end
+start->input45
+input45->input46
+input46->operation47
+operation47->output48
+output48->end
 
 `;
             chart = flowchart.parse(code);

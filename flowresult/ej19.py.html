@@ -13,17 +13,17 @@
         <script>
             code= `
 start=>start: start
-input112=>input: num = int(input("Por favor, ingrese un número: \n"))
-condition113=>condition: if num % 2 == 0
-output114=>output: print(f"El número {num} es PAR.")
-output115=>output: print(f"El número {num} es IMPAR.")
+input66=>input: num = int(input("Por favor, ingrese un número: \n"))
+condition67=>condition: if num % 2 == 0
+output68=>output: print(f"El número {num} es PAR.")
+output69=>output: print(f"El número {num} es IMPAR.")
 end=>end: end
-start->input112
-input112->condition113
-condition113(yes)->output114
-condition113(no)->output115
-output114->end
-output115->end
+start->input66
+input66->condition67
+condition67(yes)->output68
+condition67(no)->output69
+output68->end
+output69->end
 
 `;
             chart = flowchart.parse(code);

@@ -1,6 +1,6 @@
 art_nombre = input("Ingrese el nombre del articulo  \n")
 art_precio = int(input("Ingrese el precio unitario  \n"))
-IMPRIMIR """Deptartamento - Porcentaje de Incremento
+ESCRIBIR """Deptartamento - Porcentaje de Incremento
 >1     - 10%
 >2     - 15%
 >3     - 20%
@@ -18,5 +18,5 @@ incremento = 0.15
 case 3:
 art_incremento  = art_precio+ art_precio*0.2
 incremento = 0.2
-IMPRIMIR f'El articulo {art_nombre} con precio {art_precio} ahora vale {art_incremento} por incremento ${incremento*100}%  pertenece al departamento {art_depto}'
+ESCRIBIR "El articulo art_nombre con precio art_precio ahora vale art_incremento por incremento $incremento*100%  pertenece al departamento art_depto"
 FIN

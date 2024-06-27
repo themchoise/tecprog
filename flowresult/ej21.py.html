@@ -13,28 +13,28 @@
         <script>
             code= `
 start=>start: start
-input24=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
-input25=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
-input26=>input: num_tres = int(input("Ingrese el valor del tercer numero  \n"))
-condition27=>condition: if num_uno > num_dos and num_uno > num_tres
-operation28=>operation: mayor = num_uno
-condition29=>condition: if num_dos > num_uno and num_dos > num_tres
-operation30=>operation: mayor = num_dos
-operation31=>operation: mayor = num_tres
-output32=>output: print(f'El numero {mayor} es el mayor')
+input77=>input: num_uno = int(input("Ingrese el valor del primer numero  \n"))
+input78=>input: num_dos = int(input("Ingrese el valor del segundo numero  \n"))
+input79=>input: num_tres = int(input("Ingrese el valor del tercer numero  \n"))
+condition80=>condition: if num_uno > num_dos and num_uno > num_tres
+operation81=>operation: mayor = num_uno
+condition82=>condition: if num_dos > num_uno and num_dos > num_tres
+operation83=>operation: mayor = num_dos
+operation84=>operation: mayor = num_tres
+output85=>output: print(f'El numero {mayor} es el mayor')
 end=>end: end
-start->input24
-input24->input25
-input25->input26
-input26->condition27
-condition27(yes)->operation28
-condition27(no)->condition29
-condition29(yes)->operation30
-condition29(no)->operation31
-operation28->output32
-operation30->output32
-operation31->output32
-output32->end
+start->input77
+input77->input78
+input78->input79
+input79->condition80
+condition80(yes)->operation81
+condition80(no)->condition82
+condition82(yes)->operation83
+condition82(no)->operation84
+operation81->output85
+operation83->output85
+operation84->output85
+output85->end
 
 `;
             chart = flowchart.parse(code);

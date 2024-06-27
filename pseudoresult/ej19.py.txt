@@ -1,6 +1,6 @@
 num = int(input("Por favor, ingrese un número: \n"))
 SI num % 2 == 0 ENTONCES
-IMPRIMIR f"El número {num} es PAR."
+ESCRIBIR "El número num es PAR."
 SINO
-IMPRIMIR f"El número {num} es IMPAR."
+ESCRIBIR "El número num es IMPAR."
 FIN

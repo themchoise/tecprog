@@ -13,29 +13,29 @@
         <script>
             code= `
 start=>start: start
-input8=>input: pago_horas = int(input("Ingrese monto a cobrar x horas \n"))
-input9=>input: num_horas_trab = int(input("Ingrese total de horas trabajadas \n"))
-operation10=>operation: horas_ref = 160
-operation11=>operation: horas_extra = 0
-operation12=>operation: pago_final = 0
-condition13=>condition: if num_horas_trab > horas_ref
-operation14=>operation: horas_extra = num_horas_trab - horas_ref
-operation15=>operation: pago_final = ((num_horas_trab-horas_extra) * pago_horas) +  (( horas_extra * pago_horas ) * 2 )
-operation16=>operation: pago_final = num_horas_trab * pago_horas
-output17=>output: print(pago_final)
+input99=>input: pago_horas = int(input("Ingrese monto a cobrar x horas \n"))
+input100=>input: num_horas_trab = int(input("Ingrese total de horas trabajadas \n"))
+operation101=>operation: horas_ref = 160
+operation102=>operation: horas_extra = 0
+operation103=>operation: pago_final = 0
+condition104=>condition: if num_horas_trab > horas_ref
+operation105=>operation: horas_extra = num_horas_trab - horas_ref
+operation106=>operation: pago_final = ((num_horas_trab-horas_extra) * pago_horas) +  (( horas_extra * pago_horas ) * 2 )
+operation107=>operation: pago_final = num_horas_trab * pago_horas
+output108=>output: print(pago_final)
 end=>end: end
-start->input8
-input8->input9
-input9->operation10
-operation10->operation11
-operation11->operation12
-operation12->condition13
-condition13(yes)->operation14
-operation14->operation15
-condition13(no)->operation16
-operation15->output17
-operation16->output17
-output17->end
+start->input99
+input99->input100
+input100->operation101
+operation101->operation102
+operation102->operation103
+operation103->condition104
+condition104(yes)->operation105
+operation105->operation106
+condition104(no)->operation107
+operation106->output108
+operation107->output108
+output108->end
 
 `;
             chart = flowchart.parse(code);

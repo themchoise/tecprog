@@ -13,21 +13,21 @@
         <script>
             code= `
 start=>start: start
-input154=>input: num = int(input("Ingrese el valor del primer numero  \n"))
-condition155=>condition: if num % 6 == 0
-output156=>output: print(f'El numero {num} es multiplo de 6 ')
-subroutine157=>subroutine: quit()
-operation158=>operation: pass
-output159=>output: print(f'El numero {num} no es multiplo de 6')
+input55=>input: num = int(input("Ingrese el valor del primer numero  \n"))
+condition56=>condition: if num % 6 == 0
+output57=>output: print(f'El numero {num} es multiplo de 6 ')
+subroutine58=>subroutine: quit()
+operation59=>operation: pass
+output60=>output: print(f'El numero {num} no es multiplo de 6')
 end=>end: end
-start->input154
-input154->condition155
-condition155(yes)->output156
-output156->subroutine157
-condition155(no)->operation158
-subroutine157->output159
-operation158->output159
-output159->end
+start->input55
+input55->condition56
+condition56(yes)->output57
+output57->subroutine58
+condition56(no)->operation59
+subroutine58->output60
+operation59->output60
+output60->end
 
 `;
             chart = flowchart.parse(code);

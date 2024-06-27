@@ -1,4 +1,4 @@
 num = int(input("Ingrese el valor del primer numero  \n"))
 potencia = int(input("Ingrese la potencia  \n"))
-IMPRIMIR f'El resultado es {num**potencia}'
+ESCRIBIR "El resultado es num**potencia"
 FIN

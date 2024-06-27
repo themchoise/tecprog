@@ -13,16 +13,16 @@
         <script>
             code= `
 start=>start: start
-input124=>input: base = int(input("Ingrese la base  \n"))
-input125=>input: altura = int(input("Ingrese la altura  \n"))
-operation126=>operation: area = (base*altura)/2
-output127=>output: print(f'El area es {area}')
+input12=>input: base = int(input("Ingrese la base  \n"))
+input13=>input: altura = int(input("Ingrese la altura  \n"))
+operation14=>operation: area = (base*altura)/2
+output15=>output: print(f'El area es {area}')
 end=>end: end
-start->input124
-input124->input125
-input125->operation126
-operation126->output127
-output127->end
+start->input12
+input12->input13
+input13->operation14
+operation14->output15
+output15->end
 
 `;
             chart = flowchart.parse(code);

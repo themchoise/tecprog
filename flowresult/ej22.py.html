@@ -13,37 +13,37 @@
         <script>
             code= `
 start=>start: start
-input71=>input: num = int(input("Ingrese monto de la compra \n"))
-operation72=>operation: monto_pagar = 0
-operation73=>operation: estarjeta = True
-operation74=>operation: dto_15 = 0.85
-operation75=>operation: dto_10 = 0.90
-condition76=>condition: if num > 2000 and num <= 5000
-operation77=>operation: monto_pagar = num * dto_10
-condition78=>condition: if num > 5000 and not estarjeta
-operation79=>operation: monto_pagar = num * dto_15
-condition80=>condition: if num > 5000 and estarjeta
-operation81=>operation: monto_pagar = num * dto_10
-operation82=>operation: pass
-output83=>output: print(monto_pagar)
+input86=>input: num = int(input("Ingrese monto de la compra \n"))
+operation87=>operation: monto_pagar = 0
+operation88=>operation: estarjeta = True
+operation89=>operation: dto_15 = 0.85
+operation90=>operation: dto_10 = 0.90
+condition91=>condition: if num > 2000 and num <= 5000
+operation92=>operation: monto_pagar = num * dto_10
+condition93=>condition: if num > 5000 and not estarjeta
+operation94=>operation: monto_pagar = num * dto_15
+condition95=>condition: if num > 5000 and estarjeta
+operation96=>operation: monto_pagar = num * dto_10
+operation97=>operation: pass
+output98=>output: print(monto_pagar)
 end=>end: end
-start->input71
-input71->operation72
-operation72->operation73
-operation73->operation74
-operation74->operation75
-operation75->condition76
-condition76(yes)->operation77
-condition76(no)->condition78
-condition78(yes)->operation79
-condition78(no)->condition80
-condition80(yes)->operation81
-condition80(no)->operation82
-operation77->output83
-operation79->output83
-operation81->output83
-operation82->output83
-output83->end
+start->input86
+input86->operation87
+operation87->operation88
+operation88->operation89
+operation89->operation90
+operation90->condition91
+condition91(yes)->operation92
+condition91(no)->condition93
+condition93(yes)->operation94
+condition93(no)->condition95
+condition95(yes)->operation96
+condition95(no)->operation97
+operation92->output98
+operation94->output98
+operation96->output98
+operation97->output98
+output98->end
 
 `;
             chart = flowchart.parse(code);

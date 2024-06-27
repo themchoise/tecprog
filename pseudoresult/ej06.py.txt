@@ -5,5 +5,5 @@ try:
 dolar_blue = requests.get("https://dolarapi.com/v1/dolares/blue").json()["venta"]
 except:
 None
-IMPRIMIR f'El equivalente en dolares es {pesos/dolar_blue}'
+ESCRIBIR "El equivalente en dolares es pesos/dolar_blue"
 FIN

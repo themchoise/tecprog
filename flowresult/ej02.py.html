@@ -13,16 +13,16 @@
         <script>
             code= `
 start=>start: start
-operation84=>operation: import datetime as dt
-operation85=>operation: anio_actual = dt.date.today().year
-input86=>input: num_uno = int(input("Ingrese su año de nacimiento \n"))
-output87=>output: print(f' Su edad es {anio_actual-num_uno}')
+operation5=>operation: import datetime as dt
+operation6=>operation: anio_actual = dt.date.today().year
+input7=>input: num_uno = int(input("Ingrese su año de nacimiento \n"))
+output8=>output: print(f' Su edad es {anio_actual-num_uno}')
 end=>end: end
-start->operation84
-operation84->operation85
-operation85->input86
-input86->output87
-output87->end
+start->operation5
+operation5->operation6
+operation6->input7
+input7->output8
+output8->end
 
 `;
             chart = flowchart.parse(code);

@@ -13,68 +13,68 @@
         <script>
             code= `
 start=>start: start
-operation160=>operation: from py2flowchart import pyfile2flowchart
-operation161=>operation: prim_30 = 6.03
-operation162=>operation: sec_90 = 6.19
-operation163=>operation: sig_80 = 6.78
-operation164=>operation: resto = 7.24
-input165=>input: consumo_kw = int(input("Ingrese el consumo (KW) en el mes \n"))
-operation166=>operation: consumo_acum = 0
-condition167=>condition: while consumo_kw > 0|past
-condition168=>condition: if consumo_kw < 30
-operation169=>operation: consumo_acum = consumo_kw * prim_30
-operation170=>operation: consumo_kw = 0
-operation171=>operation: break
-operation172=>operation: pass
-condition173=>condition: if consumo_kw < 120
-operation174=>operation: consumo_parcial =  consumo_kw - 30
-operation175=>operation: consumo_acum = ( 30 * prim_30 ) + ( consumo_parcial *  6.19 )
-operation176=>operation: consumo_kw = 0
-operation177=>operation: break
-operation178=>operation: pass
-condition179=>condition: if consumo_kw < 200
-operation180=>operation: consumo_parcial =  consumo_kw - 120
-operation181=>operation: consumo_acum = ( 30 * prim_30 ) + ( 90 * sec_90 ) + ( consumo_parcial *  6.78 )
-operation182=>operation: consumo_kw = 0
-operation183=>operation: break
-operation184=>operation: consumo_parcial =  consumo_kw - 200
-operation185=>operation: consumo_acum = ( 30 * prim_30 ) + ( 90 * sec_90 ) + ( 80 * sig_80 ) + ( consumo_parcial *  resto )
-operation186=>operation: consumo_kw = 0
-subroutine187=>subroutine: print (consumo_acum)
+operation109=>operation: from py2flowchart import pyfile2flowchart
+operation110=>operation: prim_30 = 6.03
+operation111=>operation: sec_90 = 6.19
+operation112=>operation: sig_80 = 6.78
+operation113=>operation: resto = 7.24
+input114=>input: consumo_kw = int(input("Ingrese el consumo (KW) en el mes \n"))
+operation115=>operation: consumo_acum = 0
+condition116=>condition: while consumo_kw > 0|past
+condition117=>condition: if consumo_kw < 30
+operation118=>operation: consumo_acum = consumo_kw * prim_30
+operation119=>operation: consumo_kw = 0
+operation120=>operation: break
+operation121=>operation: pass
+condition122=>condition: if consumo_kw < 120
+operation123=>operation: consumo_parcial =  consumo_kw - 30
+operation124=>operation: consumo_acum = ( 30 * prim_30 ) + ( consumo_parcial *  6.19 )
+operation125=>operation: consumo_kw = 0
+operation126=>operation: break
+operation127=>operation: pass
+condition128=>condition: if consumo_kw < 200
+operation129=>operation: consumo_parcial =  consumo_kw - 120
+operation130=>operation: consumo_acum = ( 30 * prim_30 ) + ( 90 * sec_90 ) + ( consumo_parcial *  6.78 )
+operation131=>operation: consumo_kw = 0
+operation132=>operation: break
+operation133=>operation: consumo_parcial =  consumo_kw - 200
+operation134=>operation: consumo_acum = ( 30 * prim_30 ) + ( 90 * sec_90 ) + ( 80 * sig_80 ) + ( consumo_parcial *  resto )
+operation135=>operation: consumo_kw = 0
+subroutine136=>subroutine: print (consumo_acum)
 end=>end: end
-start->operation160
-operation160->operation161
-operation161->operation162
-operation162->operation163
-operation163->operation164
-operation164->input165
-input165->operation166
-operation166->condition167
-condition167(yes)->condition168
-condition168(yes)->operation169
-operation169->operation170
-operation170->operation171
-condition168(no)->operation172
-operation171->condition173
-operation172->condition173
-condition173(yes)->operation174
-operation174->operation175
-operation175->operation176
-operation176->operation177
-condition173(no)->operation178
-operation177->condition179
-operation178->condition179
-condition179(yes)->operation180
-operation180->operation181
-operation181->operation182
-operation182->operation183
-condition179(no)->operation184
-operation184->operation185
-operation185->operation186
-operation183->condition167
-operation186->condition167
-condition167(no)->subroutine187
-subroutine187->end
+start->operation109
+operation109->operation110
+operation110->operation111
+operation111->operation112
+operation112->operation113
+operation113->input114
+input114->operation115
+operation115->condition116
+condition116(yes)->condition117
+condition117(yes)->operation118
+operation118->operation119
+operation119->operation120
+condition117(no)->operation121
+operation120->condition122
+operation121->condition122
+condition122(yes)->operation123
+operation123->operation124
+operation124->operation125
+operation125->operation126
+condition122(no)->operation127
+operation126->condition128
+operation127->condition128
+condition128(yes)->operation129
+operation129->operation130
+operation130->operation131
+operation131->operation132
+condition128(no)->operation133
+operation133->operation134
+operation134->operation135
+operation132->condition116
+operation135->condition116
+condition116(no)->subroutine136
+subroutine136->end
 
 `;
             chart = flowchart.parse(code);

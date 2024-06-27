@@ -13,14 +13,14 @@
         <script>
             code= `
 start=>start: start
-input128=>input: num = int(input("Ingrese el valor del primer numero  \n"))
-input129=>input: potencia = int(input("Ingrese la potencia  \n"))
-output130=>output: print(f'El resultado es {num**potencia}')
+input39=>input: num = int(input("Ingrese el valor del primer numero  \n"))
+input40=>input: potencia = int(input("Ingrese la potencia  \n"))
+output41=>output: print(f'El resultado es {num**potencia}')
 end=>end: end
-start->input128
-input128->input129
-input129->output130
-output130->end
+start->input39
+input39->input40
+input40->output41
+output41->end
 
 `;
             chart = flowchart.parse(code);

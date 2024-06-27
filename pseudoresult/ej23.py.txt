@@ -12,5 +12,5 @@ horas_extra = num_horas_trab - horas_ref
 pago_final = ((num_horas_trab-horas_extra) * pago_horas) +  (( horas_extra * pago_horas ) * 2 )
 SINO
 pago_final = num_horas_trab * pago_horas
-IMPRIMIR pago_final
+ESCRIBIR pago_final
 FIN
